@@ -23,26 +23,26 @@
 			<version>5.10.2</version>
 			<scope>test</scope>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
 			<artifactId>junit-jupiter-engine</artifactId>
 			<version>5.10.2</version>
 			<scope>test</scope>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.junit.platform</groupId>
 			<artifactId>junit-platform-launcher</artifactId>
 			<version>1.10.2</version>
 			<scope>test</scope>
 		</dependency>
-		
+
 		<dependency>
-		    <groupId>org.junit.jupiter</groupId>
-		    <artifactId>junit-jupiter-params</artifactId>
-		    <version>5.10.2</version>
-		    <scope>test</scope>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-params</artifactId>
+			<version>5.10.2</version>
+			<scope>test</scope>
 		</dependency>
 
 		<!--Две зависимости для логирования -->
@@ -51,13 +51,20 @@
 			<artifactId>logback-core</artifactId>
 			<version>1.5.18</version>
 		</dependency>
-		
+
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>1.5.18</version>
+			<scope>compile</scope>
+		</dependency>
+
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
 			<version>2.0.17</version>
 		</dependency>
-		
+
 		<!--Сервлетики, они есть в томкате, поэтому provided-->
 		<dependency>
 			<groupId>jakarta.servlet</groupId>
@@ -73,7 +80,7 @@
 			<version>4.0.0</version>
 			<scope>provided</scope>
 		</dependency>
-	
+
 		<!--Две зависимости на jsp странички, но как мне кажется, я одну потерял-->
 		<dependency>
 			<groupId>jakarta.servlet.jsp.jstl</groupId>
