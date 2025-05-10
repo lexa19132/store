@@ -1,20 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns="https://jakarta.ee/xml/ns/jakartaee"
-	xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
-	version="6.0">
-
-    <display-name>store</display-name>
-    
-    <servlet>
-    	<display-name>MainServlet</display-name>
-    	<servlet-name>MainServlet</servlet-name>
-    	<servlet-class>store.servlets.MainServlet</servlet-class>
-    </servlet>
-    
-    <servlet-mapping>
-    	<servlet-name>MainServlet</servlet-name>
-    	<url-pattern>/MainServlet</url-pattern>
-    </servlet-mapping>
-
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" version="6.0">
+  <display-name>store</display-name>
+  
+  <servlet>
+    <display-name>MainPageServlet</display-name>
+    <servlet-name>MainPageServlet</servlet-name>
+    <servlet-class>store.servlets.MainPageServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>MainPageServlet</servlet-name>
+    <url-pattern>/MainPage</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>MainPage</display-name>
+    <servlet-name>MainPage</servlet-name>
+    <jsp-file>/views/MainPage.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>MainPage</servlet-name>
+    <url-pattern>/WEB-INF/MainPage</url-pattern>
+  </servlet-mapping>
+  
+  
+  <listener>
+  	<display-name>StartupListener</display-name>
+  	<listener-class>store.listeners.StartupListener</listener-class>
+  </listener>
 </web-app>
